@@ -15,21 +15,21 @@ The goals / steps of this project are the following:
 
 [//]: # (Image References)
 
-[initial_image]: ./writeup_images/initial_image.png "Initial image"
-[grayscaled_image]: ./writeup_images/grayscaled_image.png "Grayscaled image"
+[image1]: ./writeup_images/blurred_image.png "Grayscale"
+
 ---
 
 ### Reflection
 
 ### 1. Describe your pipeline. As part of the description, explain how you modified the draw_lines() function.
 
-My pipeline consisted of 8 steps. 
+My pipeline consisted of 5 steps. First, I converted the images to grayscale, then I .... 
 
 In order to draw a single line on the left and right lanes, I modified the draw_lines() function by ...
 
 If you'd like to include images to show how the pipeline works, here is how to include an image: 
 
-![alt text][initial_image]
+![alt text][image1]
 
 
 ### 2. Identify potential shortcomings with your current pipeline
