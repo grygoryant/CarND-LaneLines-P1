@@ -15,7 +15,7 @@ The goals / steps of this project are the following:
 
 [//]: # (Image References)
 
-[image1]: (./writeup_images/blurred_image.png "Grayscale" | width=100)
+[image1]: ./writeup_images/blurred_image.png "Grayscale"
 
 ---
 
@@ -29,7 +29,7 @@ In order to draw a single line on the left and right lanes, I modified the draw_
 
 If you'd like to include images to show how the pipeline works, here is how to include an image: 
 
-![alt text][image1]
+![alt text][image1 | width = 100]
 
 
 ### 2. Identify potential shortcomings with your current pipeline
