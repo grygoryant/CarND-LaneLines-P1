@@ -15,7 +15,7 @@ The goals / steps of this project are the following:
 
 [//]: # (Image References)
 
-[image1]: ./writeup_images/blurred_image.png "Grayscale"
+[image1]: ./writeup_images/initial.png "Initial image"
 
 ---
 
