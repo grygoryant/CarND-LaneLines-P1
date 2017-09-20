@@ -100,20 +100,16 @@ And here's the final result:
 
 ![alt text][result]
 
-
-
-In order to draw a single line on the left and right lanes, I modified the draw_lines() function by ...
+I made draw_lines() the member function of my SimpleLaneDetector in order to use members of SimpleLaneDetector class.
 
 ### 2. Identify potential shortcomings with your current pipeline
 
+I think, that this approach depends a lot on the brightness of given picture and the lighting of scene. 
+So it could be dificult to detect lanes in shadowy areas, at night etc.
 
-One potential shortcoming would be what would happen when ... 
-
-Another shortcoming could be ...
+Also it could be dificult to solve cases, when, for example, white car is taken for the road lane.
 
 
 ### 3. Suggest possible improvements to your pipeline
 
-A possible improvement would be to ...
-
-Another potential improvement could be to ...
+A possible improvement would be to use another method of selecting segments of right and left lanes, based on the slope angle of segments.
