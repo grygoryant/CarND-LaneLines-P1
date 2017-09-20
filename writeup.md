@@ -25,6 +25,8 @@ The goals / steps of this project are the following:
 [masked_image]: ./writeup_images/masked_image.png "Masked image"
 [blurred]: ./writeup_images/blurred.png "Blurred image"
 [edges]: ./writeup_images/edges.png "Edges image"
+[roi]: ./writeup_images/roi.png "ROI image"
+[result]: ./writeup_images/result.png "Result image"
 
 ---
 
@@ -74,15 +76,33 @@ In order to avoid noises, we apply gaussian blur filter on the masked image.
 
 Now our image has nice contrast, so we can apply edge detector.
 
+![alt text][edges]
+
+6. Mask image using ROI mask.
+
+In order to select only that area of picture, that is interesting for us, we applying perspective ROI mask.
+
+![alt text][roi]
+
+7. Hough transform.
+
+Detected edges allow us to use Hough transform to get all straight lines from our image.
+
+8. Finally, we extrapolate and get avaraged road lanes.
+
+It is neccessary to say, how extrapolating and averaging works.
+
+Step #7 gives us a set of points, which are the ends of lines. We select the medium point and checks, if given line point lies on the right or on the left side of that middle point. If one of the two line points lies on the left side of middle point, then this line is the left line. The same logic is used to find all segments of the right line.
+
+As for averaging, we simply store the deque of several previous values of line coefficients and on each iteration we just count the average value of that coefficients.
+
+And here's the final result!
+
+![alt text][result]
 
 
 
 In order to draw a single line on the left and right lanes, I modified the draw_lines() function by ...
-
-If you'd like to include images to show how the pipeline works, here is how to include an image: 
-
-![alt text][initial]
-
 
 ### 2. Identify potential shortcomings with your current pipeline
 
