@@ -96,7 +96,7 @@ Step #7 gives us a set of points, which are the ends of lines. We select the med
 
 As for averaging, we simply store the deque of several previous values of line coefficients and on each iteration we just count the average value of that coefficients.
 
-And here's the final result!
+And here's the final result:
 
 ![alt text][result]
 
