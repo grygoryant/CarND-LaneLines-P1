@@ -32,7 +32,9 @@ My pipeline consisted of 8 steps.
 I decided to choose HLS color scheme because white and yellow colors are clearly expressed in separate channels of this color model.
 Here's the examples of splitting image to three channels:
 
-![alt text][h_channel][l_channel][s_channel]
+![alt text][h_channel]
+![alt text][l_channel]
+![alt text][s_channel]
 
 In order to draw a single line on the left and right lanes, I modified the draw_lines() function by ...
 
