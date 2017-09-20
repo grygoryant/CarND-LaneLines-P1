@@ -29,7 +29,8 @@ In order to draw a single line on the left and right lanes, I modified the draw_
 
 If you'd like to include images to show how the pipeline works, here is how to include an image: 
 
-![](./writeup_images/blurred_image.png =100x20)
+<img src="./writeup_images/blurred_image.png" alt="Drawing" style="width: 200px;"/>
+![alt text][image1]
 
 
 ### 2. Identify potential shortcomings with your current pipeline
