@@ -19,6 +19,9 @@ The goals / steps of this project are the following:
 [h_channel]: ./writeup_images/h_channel.png "H channel image"
 [l_channel]: ./writeup_images/l_channel.png "L channel image"
 [s_channel]: ./writeup_images/s_channel.png "S channel image"
+[white_areas]: ./writeup_images/white_areas.png "White areas image"
+[yellow_areas]: ./writeup_images/yellow_areas.png "Yellow areas image"
+[color_mask]: ./writeup_images/color_mask.png "Color mask image"
 
 ---
 
@@ -35,6 +38,21 @@ Here's the examples of splitting image to three channels:
 ![alt text][h_channel]
 ![alt text][l_channel]
 ![alt text][s_channel]
+
+As we can see, white color is well distinguishable in the L channel, while yellow in the S channel.
+
+2. Color thresholding.
+
+In this step we use splitted HLS channels to extract white color areas and yellow color areas. In order to do this we use thresholding operation.
+
+![alt text][white_areas]
+![alt text][yellow_areas]
+
+After that we combine those two results to get color mask.
+
+![alt text][color_mask]
+
+
 
 In order to draw a single line on the left and right lanes, I modified the draw_lines() function by ...
 
