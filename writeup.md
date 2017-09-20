@@ -30,6 +30,9 @@ The goals / steps of this project are the following:
 ### 1. Describe your pipeline. As part of the description, explain how you modified the draw_lines() function.
 
 My pipeline consisted of 8 steps.
+
+![alt text][initial]
+
 1. Converting image from RGB to HLS color scheme. 
 
 I decided to choose HLS color scheme because white and yellow colors are clearly expressed in separate channels of this color model.
