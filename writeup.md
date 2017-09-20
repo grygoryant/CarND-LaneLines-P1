@@ -15,7 +15,10 @@ The goals / steps of this project are the following:
 
 [//]: # (Image References)
 
-[image1]: ./writeup_images/initial.png "Initial image"
+[initial]: ./writeup_images/initial.png "Initial image"
+[h_channel]: ./writeup_images/h_channel.png "H channel image"
+[l_channel]: ./writeup_images/l_channel.png "L channel image"
+[s_channel]: ./writeup_images/s_channel.png "S channel image"
 
 ---
 
@@ -23,13 +26,18 @@ The goals / steps of this project are the following:
 
 ### 1. Describe your pipeline. As part of the description, explain how you modified the draw_lines() function.
 
-My pipeline consisted of 5 steps. First, I converted the images to grayscale, then I .... 
+My pipeline consisted of 8 steps.
+1. Converting image from RGB to HLS color scheme. 
+
+I decided to choose HLS color scheme because white and yellow colors are clearly expressed in separate channels of this color model.
+Here's the examples of splitting image to three channels:
+![alt text][h_channel][l_channel][s_channel]
 
 In order to draw a single line on the left and right lanes, I modified the draw_lines() function by ...
 
 If you'd like to include images to show how the pipeline works, here is how to include an image: 
 
-![alt text][image1]
+![alt text][initial]
 
 
 ### 2. Identify potential shortcomings with your current pipeline
