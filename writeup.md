@@ -26,7 +26,7 @@ The goals / steps of this project are the following:
 [blurred]: ./writeup_images/blurred.png "Blurred image"
 [edges]: ./writeup_images/edges.png "Edges image"
 [roi]: ./writeup_images/roi.png "ROI image"
-[result]: ./writeup_images/result.png "Result image"
+[result]: ./writeup_images/Result.png "Result image"
 
 ---
 
