@@ -22,6 +22,9 @@ The goals / steps of this project are the following:
 [white_areas]: ./writeup_images/white_areas.png "White areas image"
 [yellow_areas]: ./writeup_images/yellow_areas.png "Yellow areas image"
 [color_mask]: ./writeup_images/color_mask.png "Color mask image"
+[masked_image]: ./writeup_images/masked_image.png "Masked image"
+[blurred]: ./writeup_images/blurred.png "Blurred image"
+[edges]: ./writeup_images/edges.png "Edges image"
 
 ---
 
@@ -54,6 +57,23 @@ In this step we use splitted HLS channels to extract white color areas and yello
 After that we combine those two results to get color mask.
 
 ![alt text][color_mask]
+
+3. Masking image with color mask.
+
+Here we apply the mask from the previous step to get all neccessary zones on a picture.
+
+![alt text][masked_image]
+
+4. Blurring masked image.
+
+In order to avoid noises, we apply gaussian blur filter on the masked image.
+
+![alt text][blurred]
+
+5. Canny edge detector.
+
+Now our image has nice contrast, so we can apply edge detector.
+
 
 
 
